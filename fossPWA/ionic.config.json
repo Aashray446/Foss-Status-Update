@@ -1,0 +1,7 @@
+{
+  "name": "fossPWA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

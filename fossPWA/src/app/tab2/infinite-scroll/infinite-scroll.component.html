@@ -1,0 +1,27 @@
+<ion-content class="ion-margin">
+
+<!-- List of Text Items -->
+<div class="list-view">
+  <ion-row *ngFor="let item of this.getData()" >
+    <ion-col size="3">
+      <ion-img [src]="item.icon"></ion-img>
+      </ion-col>
+    <ion-col class="details" size="7">
+      <p> {{item.name}} </p>
+      <span id="year"> First Year</span>
+      <span id="streak">  <ion-icon style="color: orange;" name="flame"></ion-icon> <span>{{item.streak}} </span> </span>
+      </ion-col>
+      <ion-col>
+        <!-- Something Can be Added -->
+      </ion-col>
+  </ion-row>
+
+</div>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

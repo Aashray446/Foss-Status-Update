@@ -1,0 +1,30 @@
+.badge {
+  margin: 5% 10% 0% 10%;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: white;
+}
+.badge h3,h4 {
+  margin: 0px;
+}
+
+ion-content {
+  --ion-background-color: var(--light);
+}
+
+.badge ion-row{
+  margin : 1vh 0 0 0;
+
+
+}
+
+ion-header {
+  --ion-background-color: var(--lightDark)
+}
+ion-title{
+  color: whitesmoke;
+  opacity: 0.9;
+
+}
