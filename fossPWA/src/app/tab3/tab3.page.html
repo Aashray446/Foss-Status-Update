@@ -22,9 +22,9 @@
 
     <ion-card-content>
 
-      <ion-datetime presentation="time">
+      <ion-datetime #time presentation="time" color="secondary" >
         <ion-buttons slot="buttons">
-          <ion-button >Good to go!</ion-button>
+          <ion-button (click)="setAlarm(time)" >Good to go!</ion-button>
           <ion-button >Reset</ion-button>
         </ion-buttons>
       </ion-datetime>
@@ -33,3 +33,22 @@
   </ion-card>
 
 </ion-content>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>My Coins</ion-card-subtitle>
+    <ion-card-title><ion-icon name="logo-bitcoin"></ion-icon>2443</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button shape="circle" color="primary" >REDEEM</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button shape="circle" color="secondary">DONATE</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card-content>
+</ion-card>
